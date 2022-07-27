@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>songgeonwoo blog</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title">햇반</h1>
+          <h2 class="master-description">SW A&D</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-left">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">뭘까요?</span>
+                <ul class="inner-menu">
+                  <li class="inner-menu-item"><a href="index.html">족발</a></li>
+                  <li class="inner-menu-item">
+                    <a href="oott.html">보쌈</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Interest</span>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Best</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title">저는 송건우입니다.</h1>
+            </div>
+            <div class="article-body">
+              <img src="dsfd.PNG" />
+              <p>안녕하세요 저는 용문고등학교에 다니는 송건우 입니다.</p>
+              <p>저는 용문고 배드민턴 동아리 입니다.</p>
+              <p>아 집가고 싶다.</p> 
+            </div>
+          </article>
+        </section>
+        <aside id="main-aside">
+          <div class="aside-list">
+            <h3>집가고 싶다</h3>
+            <ul>
+              <li><a href="#">데이터</a></li>
+              <li><a href="#">데이터</a></li>
+              <li><a href="#">데이터</a></li>
+            </ul>
+          </div>
+          <div class="aside-list">
+            <h3>최신글</h3>
+            <ul>
+              <li><a href="#">데이터</a></li>
+              <li><a href="#">데이터</a></li>
+              <li><a href="#">데이터</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <footer id="main-footer">
+        <a href="https://github.com/woonsango">Created By 송건우</a>
+      </footer>
+    </div>
+  </body>
+</html>
